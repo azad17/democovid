@@ -1,0 +1,27 @@
+{%extends 'book/base.html'%}
+{%block content%}
+
+ <div class="section-title" >
+
+          <p style="font-size:20px;padding:20px">Authority  Info</p>
+        </div>
+<div class="container" style="padding:20px;">
+<div class = "row">
+  <div class="col">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{exp.pic.url}}" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text"><b>{{exp.name}}</b></p>
+    </div>
+  </div>
+  </div>
+  <div class="col">
+    <b>Designation:</b><p>{{exp.designation}}</p>
+ <b>Age:</b><p>{{exp.age}}</p>
+      <b>Career:</b><p>{{exp.history}}</p>
+
+  </div>
+</div>
+</div>
+
+{%endblock%}
